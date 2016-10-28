@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script defer src="./public/js/require.js" data-main="./public/js/isotop"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+<div id="wrapper">
+    <header id="header" class="site-header">
+        <div class="container">
+            <a href="#" class="site-header__logo"><img src="./public/images/logo.png" alt=""></a>
+            <nav class="site-header__nav">
+                <ul class="site-navigation">
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#">Home</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#">About us</a></li>
+                    <li class="site-navigation__item has-children">
+                        <div class="caret"></div>
+                        <a class="site-navigation__link" href="#">Services</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a class="submenu-item__link" href="#">Web design</a></li>
+                            <li class="submenu-item"><a class="submenu-item__link" href="#">Wordpress design</a></li>
+                            <li class="submenu-item"><a class="submenu-item__link" href="#">Mobile app devplopment</a></li>
+                            <li class="submenu-item"><a class="submenu-item__link" href="#">Internet marketing</a></li>
+                            <li class="submenu-item lastChild"><a class="submenu-item__link" href="#">Social media management</a></li>
+                        </ul>
+                    </li>
+                    <li class="site-navigation__item has-children">
+                        <div class="caret"></div>
+                        <a class="site-navigation__link" href="#">Portfolio</a>
+                    </li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#">Blog</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <section id="main" class="portfolio">
+     <div class="container">
+
+         <h2 class="portfolio__title headline">Portfolio</h2>
+         <div id="filters">
+             <div class="ui-group">
+                 <div class="button-group filter-button-group" data-filter-group="name">
+                     <button class="button is-checked" data-filter="*">All</button>
+                     <button class="button" data-filter=".websites">Websites</button>
+                     <button class="button" data-filter=".wordpress">Wordpress</button>
+                     <button class="button" data-filter=".mobileApps">Mobil Apps</button>
+                     <button class="button" data-filter=".icons">Icons</button>
+                     <button class="button" data-filter=".logos">Logos</button>
+                     <button class="button" data-filter=".graphics">Graphics</button>
+                 </div>
+             </div>
+         </div>
+
+         <div class="grid">
+             <div class="grid-item websites wordpress"><img src="./public/images/quickLogin.png"></div>
+             <div class="grid-item websites logos"><img src="./public/images/nature.png"></div>
+             <div class="grid-item websites"><img src="./public/images/app.png"></div>
+             <div class="grid-item websites mobileApps"><img src="./public/images/pencil.png"></div>
+             <div class="grid-item websites mobileApps"><img src="./public/images/help.png"></div>
+             <div class="grid-item websites wordpress"><img src="./public/images/imgGrey.png"></div>
+             <div class="grid-item wordpress graphics logos"><img src="./public/images/sky.png"></div>
+             <div class="grid-item wordpress logos"><img src="./public/images/book.png"></div>
+             <div class="grid-item wordpress graphics logos"><img src="./public/images/present.png"></div>
+             <div class="grid-item mobileApps graphics"><img src="./public/images/sale.png"></div>
+             <div class="grid-item mobileApps logos"><img src="./public/images/smile.png"></div>
+             <div class="grid-item mobileApps"><img src="./public/images/brown.png"></div>
+             <div class="grid-item icons graphics"><img src="./public/images/notepad.png"></div>
+             <div class="grid-item icons logos"><img src="./public/images/lemon.png"></div>
+             <div class="grid-item icons"><img src="./public/images/figure.png"></div>
+             <div class="grid-item icons logos"><img src="./public/images/shoot.png"></div>
+         </div>
+
+         <div id="filtersPage">
+             <div class=" filtersPage">
+                 <div class="button-group filter-button-group" data-filter-group="page">
+                     <button class="button is-checked" data-filter="*">1</button>
+                     <button class="button" data-filter=".websites">2</button>
+                     <button class="button" data-filter=".wordpress">3</button>
+                     <button class="button" data-filter=".mobileApps">4</button>
+                     <button class="button" data-filter=".icons">5</button>
+                     <button class="button" data-filter=".graphics">6</button>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+ </section>
+
+
+
+
+    <footer id="footer" class="site-footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="aboutUs">
+                    <h2 class="aboutUs__title headline">About us</h2>
+                    <p class="aboutUs__text">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Morbi euismod placerat
+                        dui et tincidunt. Sed sollicitudin posuere auctor.
+                        Phasellus at ultricies nisl. Integer at leo eros.
+                        Ut nec lorem id orci convallis porta. Donec pharetra
+                        neque eu velit dictum molestie.
+                    </p>
+                </div>
+                <div class="explore">
+                    <h2 class="explore__title headline">Explore</h2>
+                    <ul class="explore__list">
+                        <li class="explore__list-item"><a class="explore__list-link" href="#">Home</a></li>
+                        <li class="explore__list-item"><a class="explore__list-link" href="#">About us</a></li>
+                        <li class="explore__list-item"><a class="explore__list-link" href="#">Services</a></li>
+                        <li class="explore__list-item"><a class="explore__list-link" href="#">Portfolio</a></li>
+                        <li class="explore__list-item"><a class="explore__list-link" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="browse">
+                    <h2 class="browse__title headline">Browse</h2>
+                    <ul class="browse__list">
+                        <li class="browse__list-item"><a class="browse__list-link" href="#">Careers</a></li>
+                        <li class="browse__list-item"><a class="browse__list-link" href="#"></a>Press &amp; media</li>
+                        <li class="browse__list-item"><a class="browse__list-link" href="#">Contact us</a></li>
+                        <li class="browse__list-item"><a class="browse__list-link" href="#">Terms of service</a></li>
+                        <li class="browse__list-item"><a class="browse__list-link" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="contactUs">
+                    <h2 class="contactUs__title headline">Contact us</h2>
+                    <p class="contactUs-adress"><span>BisLite Inc.</span>
+                        Always Street 265
+                        0X - 125 - Canada
+                    </p>
+                    <p class="contactUs-phone">Phone:<a href="">987-6543-210</a></p>
+                    <p class="contactUs-fax">Fax:<a href="#">987-6543-210</a></p>
+                </div>
+
+                <div class="connect">
+                    <h2 class="connect__title headline">Connect with us</h2>
+                    <ul class="connect__list">
+                        <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./public/images/facebook.png" alt=""></a></li>
+                        <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./public/images/dribble.png" alt=""></a></li>
+                        <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./public/images/pinterest.png" alt=""></a></li>
+                        <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./public/images/linkedin.png" alt=""></a></li>
+                        <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./public/images/skype.png" alt=""></a></li>
+                        <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./public/images/share.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-text">
+                    <p >&copy; Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com.
+                    </p>
+                    <p>
+                        Client Logos are copyright and trademark of the respective owners / companies.
+                    </p>
+                </div>
+                <a href="#" class="footer__logo"><img src="./public/images/logo.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

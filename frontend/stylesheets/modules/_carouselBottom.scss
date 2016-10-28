@@ -1,0 +1,96 @@
+.carousel__works{
+  padding: 25px 0 0 0;
+}
+.carousel__worksSlide {
+  padding: 20px 0 50px 0;
+  border-top:  solid 1px #dfe1e5;
+  border-bottom: solid 1px #dfe1e5;
+  &-image{
+    position: relative;
+    height: 159px;
+    margin: 0 31px 0 0;
+  }
+}
+.worksSlide{
+  &__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+  &__anim{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #2aacc8;
+    &:hover{
+      opacity: 1;
+      @include anim($param: opacity, $dur: 1s);
+    }
+
+  }
+}
+
+.imageOne{
+  background: url(../images/carousel-workImgOne.png) no-repeat 50%
+  0;
+  background-size: cover;
+}
+.imageTwo{
+  background: url(../images/carousel-workImgTwo.png) no-repeat 50%
+  0;
+  background-size: cover;
+}
+.imageThree{
+  background: url(../images/carousel-workImgThree.png) no-repeat 50%
+  0;
+  background-size: cover;
+}
+.imageFour{
+  background: url(../images/carousel-workImgFour.png) no-repeat 50%
+  0;
+  background-size: cover;
+}
+
+
+.worksSlide__link{
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.worksSlide__preview{
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+}
+
+button.slick-prev.slick-arrow{
+  text-indent: -99999px;
+  border: none;
+  position: absolute;
+  top: -39px;
+  right: 30px;
+  background: url(../images/carousel-workButton.png) no-repeat -50% 50% #96cbdc;
+  background-position: 6px 4px;
+  padding: 2px 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+button.slick-next.slick-arrow{
+  text-indent: -99999px;
+  border: none;
+  position: absolute;
+  top: -40px;
+  right: -1px;
+  background: url(../images/carousel-workButton.png) no-repeat -50% 50% #96cbdc;
+  background-position: -23px 5px;
+  padding: 2px 10px;
+  border-radius: 50%;
+}

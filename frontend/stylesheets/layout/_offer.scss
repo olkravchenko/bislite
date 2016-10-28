@@ -1,0 +1,107 @@
+.offer{
+  background-color: #e8ebf1;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 67px 0 40px 0;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:nth-of-type(1n+2) {
+      margin: 0 0 0 50px;
+      line-height: 1.2;
+    }
+    &-title{
+
+      &:after{
+        content: '';
+        position: absolute;
+        top: -11px;
+        left: 0;
+        width: 42px;
+        height: 43px;
+        background: url("../images/offer-img.png") no-repeat 0 50%;
+      }
+    }
+
+    &-text{
+      margin: 31px 0 5px 0;
+      font-size: 0.8125em;
+      line-height: 1.5;
+    }
+    &-link{
+      display: inline-block;
+      color: $colorLink;
+      font-family: $family;
+      font-size: 0.8125em;
+      //margin-top: auto;
+      position: relative;
+      padding-left: 15px;
+
+    }
+  }
+
+}
+
+.caret-link{
+  position: relative;
+  left: 0px;
+  top: 4%;
+  width: 8px;
+  height: 7px;
+  transform: rotate(-88deg);
+  z-index: 1;
+  &:after, &:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 5px;
+    height: 2px;
+    background-color: $colorText;
+    transform: rotate(45deg);
+  }
+  &:after{
+    transform: rotate(-45deg);
+    left: auto;
+    right: 0;
+  }
+}
+.headline{
+  font-family: $family;
+  font-weight: bold;
+  font-size: 0.938em;
+  position: relative;
+  padding: 0 0 0 45px;
+  text-transform: uppercase;
+}
+.carousel__works-title{
+  margin: 0 0 15px 0;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 19px;
+    height: 24px;
+    background: url("../images/carousel-workPoint.png") no-repeat 0 50%;
+  }
+}
+.foolscreen{
+  &:after{
+    background-position: -258px 0;
+  }
+}
+.view-list{
+  &:after{
+    background-position: -520px 0;
+  }
+}
+.plane{
+  &:after{
+    background-position: -780px 0;
+  }
+}

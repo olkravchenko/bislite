@@ -1,0 +1,28 @@
+.ui-group{
+  padding: 12px 0;
+  border-top: solid 1px #dfe1e5;
+  border-bottom: solid 1px #dfe1e5;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  font-size: 0.8125em;
+  padding: 10px;
+  margin: 0 12px 0 0;
+  &:hover {
+      box-shadow: inset -150px 0 0 0 #81e4ed;
+    @include anim($param: box-shadow, $dur: .5s);
+  }
+}
+.grid{
+  margin: 40px 0;
+    &-item{
+      width: 25%;
+      height: 160px;
+      margin: 0 0 40px 0;
+    }
+}
+.filtersPage{
+  text-align: center;
+}

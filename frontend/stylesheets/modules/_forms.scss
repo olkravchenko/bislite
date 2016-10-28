@@ -1,0 +1,42 @@
+.form{
+  flex: 0 0 580px;
+}
+.contacts__form{
+  display: flex;
+  flex-direction: column;
+    &-lable{
+    display: flex;
+      margin: 0 0 65px 0;
+      font-size: 0.8125em;
+
+      span{
+        flex: 0 0 100px;
+        vertical-align: top;
+      }
+    }
+  &-submit{
+    display: table;
+    font-family: $family;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 122px 0 0 -2px;
+    padding: 15px 17px 15px 45px;
+    border-radius: 5%;
+    border: solid 1px #2aacc8;
+    background: url("../images/submit-image.png") no-repeat 50% 0 #78dee9;
+    background-position: 9% 40%;
+    max-width: 160px;
+  }
+}
+
+input{
+  border: none;
+  width: 100%;
+  &:last-child{
+    margin: 0 0 57px 0;
+  }
+}
+textarea{
+  border: none;
+}

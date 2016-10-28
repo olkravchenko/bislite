@@ -1,0 +1,98 @@
+#footer{
+  &.site-footer{
+    background: $bgFooter;
+    padding: 30px 0 50px 0;
+  }
+}
+.footer__top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutUs{
+  flex: 0 0 240px;
+     &__title{
+      margin: 0 0 23px 0;
+     }
+    &__text{
+      font-family: $family;
+      font-size: $fsize-footer;
+    }
+}
+.explore{
+  flex: 0 0 100px;
+  margin: 0 0 0 28px;
+    &__title{
+      margin: 0 0 8px 0;
+    }
+    &__list{
+      font-size: $fsize-footer;
+        &-item{
+          margin: 0 0 10px 0;
+        }
+    }
+}
+.browse{
+  flex: 0 0 135px;
+  margin: 0 0 0 28px;
+  &__title{
+    margin: 0 0 8px 0;
+  }
+  &__list{
+    font-size: $fsize-footer;
+    &-item{
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.contactUs{
+  flex: 0 0 170px;
+  &__title{
+    margin: 0 0 8px 0;
+  }
+  &-adress{
+    font-size: $fsize-footer;
+     span{
+       font-weight: bold;
+       display: block;
+     }
+  }
+    &-phone{
+      margin: 20px 0 0 0;
+      font-size: $fsize-footer;
+    }
+  &-fax{
+    font-size: $fsize-footer;
+  }
+}
+.connect{
+  flex: 0 0 200px;
+  &__title{
+    margin: 0 0 20px 0;
+  }
+  &__list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
+}
+
+.aboutUs .headline,
+.explore .headline,
+.browse .headline,
+.contactUs .headline,
+.connect .headline{
+  padding-left: 0;
+}
+
+.footer__bottom{
+  margin: 40px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+    &-text{
+      font-size: 0.8125em;
+
+    }
+}
